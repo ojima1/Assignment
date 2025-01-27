@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information about the document -->
+    <meta charset="UTF-8" />
+    <!-- Title displayed in the browser tab -->
+    <title>My First Assignment</title>
+  </head>
+  <body>
+    <!-- Main content section -->
+    <article id="html-intro" class="article-section">
+      <!-- Primary heading of the article -->
+      <h1 id="main-title" class="title" title="Introduction to HTML">
+        The Basic Language of the Web: HTML
+      </h1>
+
+      <!-- Paragraph explaining the context of the article -->
+      <p class="paragraph">
+        All modern websites and web applications are built using three
+        fundamental technologies: HTML, CSS, and JavaScript. These are the
+        languages of the web.
+      </p>
+      <!-- Additional paragraph elaborating on the focus -->
+      <p class="paragraph">
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <!-- Secondary heading about HTML definition -->
+      <h2 id="what-is-html" title="Definition of HTML">What is HTML?</h2>
+      <!-- Paragraph describing what HTML is -->
+      <p class="paragraph">
+        HTML stands for HyperText Markup Language. It's a markup language that
+        web developers use to structure and describe the content of a webpage
+        (not a programming language).
+      </p>
+      <!-- More details about HTML usage -->
+      <p class="paragraph">
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, videos, etc. Web browsers
+        understand HTML and render HTML code as websites.
+      </p>
+
+      <!-- Subsection listing hobbies -->
+      <h3 id="hobbies" title="My Favorite Hobbies">My favorite hobbies are:</h3>
+      <!-- Ordered list of hobbies -->
+      <ol class="hobby-list">
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Traveling</li>
+        <li>Cooking</li>
+        <li>Singing</li>
+        <li>Listening to music</li>
+      </ol>
+
+      <!-- Highlighting top hobbies -->
+      <h3 id="fav-hobbies" title="Top Three Hobbies">
+        Out of the listed hobbies, my three most favorite are:
+      </h3>
+      <!-- Unordered list of favorite hobbies -->
+      <ul class="top-hobbies">
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Listening to music</li>
+        <li>Singing</li>
+      </ul>
+
+      <!-- Section showcasing a sample work -->
+      <p>
+        <strong title="Sample Work">Here is a sample of my work:</strong>
+      </p>
+      <!-- Image representing the sample work -->
+      <img
+        id="sample-img"
+        class="image"
+        src="/Assignment img.jpg"
+        alt="Sample of my work"
+        width="800"
+        height="400"
+        title="Sample Work"
+      />
+
+      <!-- Link to an HTML tutorial -->
+      <p class="paragraph">
+        You too can learn HTML from this website:
+        <a
+          href="https://www.w3schools.com/html/"
+          target="_blank"
+          title="Visit W3Schools"
+          class="link"
+          >W3Schools</a
+        >
+      </p>
+
+      <!-- Table displaying structured information -->
+      <table
+        id="info-table"
+        class="table"
+        style="
+          border: 1px solid black;
+          border-collapse: collapse;
+          width: 50%;
+          text-align: left;
+        "
+      >
+        <thead>
+          <!-- Table header -->
+          <tr style="background-color: #f2f2f2; border: 1px solid black">
+            <th style="border: 1px solid black; padding: 8px">Name</th>
+            <th style="border: 1px solid black; padding: 8px">Age</th>
+            <th style="border: 1px solid black; padding: 8px">
+              Favorite Color
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table row with content -->
+          <tr>
+            <td style="border: 1px solid black; padding: 8px">Gloria</td>
+            <td style="border: 1px solid black; padding: 8px">26</td>
+            <td style="border: 1px solid black; padding: 8px">Pink</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <!-- User form for collecting details -->
+      <form
+        id="user-form"
+        class="form"
+        action="submit"
+        method="post"
+        title="User Details Form"
+      >
+        <!-- Input for user name -->
+        <label for="userName" class="label">User Name:</label>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="Enter your name"
+          required
+          title="Enter your name here"
+        />
+
+        <br />
+        <br />
+        <!-- Dropdown for selecting favorite color -->
+        <label for="favoriteColor" class="label">Favorite Color:</label>
+        <select
+          id="favoriteColor"
+          name="favoriteColor"
+          required
+          title="Choose your favorite color"
+        >
+          <option value="">--Select a Color--</option>
+          <option value="pink">pink</option>
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="green">green</option>
+          <option value="yellow">yellow</option>
+          <option value="purple">purple</option>
+        </select>
+
+        <br />
+        <br />
+        <!-- Checkbox for terms and conditions -->
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          required
+          title="Agree to terms and conditions"
+        />
+        <label for="terms" class="label">
+          I agree to the
+          <a href="terms.html" title="Read the Terms and Conditions">
+            terms and conditions
+          </a>
+        </label>
+
+        <br />
+        <br />
+        <!-- Submit button -->
+        <button type="submit" class="button" title="Submit the form">
+          Submit
+        </button>
+      </form>
+    </article>
+  </body>
+</html>
